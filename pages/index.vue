@@ -13,11 +13,13 @@
         really know what it is.
       </p>
 
-      <NuxtLink to="/dashboard">
-        <PrimaryButton>
-          Enter Blog
-        </PrimaryButton>
-      </NuxtLink>
+      <div class="flex w-full justify-end">
+        <NuxtLink to="/dashboard">
+          <PrimaryButton>
+            Enter Blog
+          </PrimaryButton>
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>

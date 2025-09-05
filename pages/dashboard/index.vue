@@ -10,7 +10,7 @@
         <div>
             <div class="p-4 border-t border-b border-gray-200 ">
                 <NuxtLink>
-                    <p>My First Post</p>
+                    <span class="hover:cursor-pointer hover:text-blue-500">My First Post</span>
                 </NuxtLink>
             </div>
         </div>
