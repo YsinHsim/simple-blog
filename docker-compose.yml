@@ -1,0 +1,18 @@
+# Specifies the Docker Compose file format version
+version: '3.8'
+
+# Defines the services (containers) that make up your app
+services:
+  # The name of our service
+  app:
+    # Build the Docker image from the Dockerfile in the current directory
+    build: .
+    # Forward port 3000 on your computer to port 3000 in the container
+    ports:
+      - "3000:3000"
+    # Sync the current directory on your computer with the /app directory in the container
+    volumes:
+      - .:/app
+    # An environment variable to ensure Nuxt is accessible from outside the container
+    environment:
+      - HOST=0.0.0.0
